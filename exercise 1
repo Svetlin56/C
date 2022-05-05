@@ -1,0 +1,8 @@
+int main()
+{
+    int x=10;
+    x=x+35;
+    printf("%d", x);
+
+    return 0;
+}
