@@ -1,0 +1,38 @@
+int main()
+{
+    int *p;
+    int x=5;
+    p=&x;
+    printf("%d", *p);
+    return 0;
+}
+
+int main()
+{
+    int x;
+    double *p;
+    p=&x;
+    *p=24.50;
+    return 0;
+}
+
+int main()
+{
+    int count=6,x,*p;
+    p=&count;
+    x=*p;
+    printf("count=%d, x=%d", count, x);
+    return 0;
+}
+
+int main()
+{
+    void *pv;
+    int i=10;
+    double d=2.34;
+    pv=&i;
+    printf("%d", *((int*)pv));
+    pv=&d;
+    printf("%f", *((double*)pv));
+    return 0;
+}
