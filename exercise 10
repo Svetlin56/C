@@ -1,0 +1,39 @@
+int main()
+{
+    int seen[10]={0};
+    int N;
+    printf("Enter a number: ");
+    scanf("%d", &N);
+
+    int rem;
+    while(N>0)
+    {
+        rem=N%10;
+        if(seen[rem]==1)
+            break;
+        seen[rem]=1;
+        N=N/10;
+    }
+    if(N>0)
+        printf("Yes");
+    else
+        printf("No");
+    return 0;
+}
+
+
+int main()
+{
+    int n1,n2,n3,sum,avg;
+    printf("Enter first numbers: ");
+    scanf("%d", &n1);
+    printf("Enter second number: ");
+    scanf("%d", &n2);
+    printf("Enter third numbers: ");
+    scanf("%d", &n3);
+
+    sum=n1+n2+n3;
+    avg=sum/3;
+    printf("The result is: %d", avg);
+    return 0;
+}
