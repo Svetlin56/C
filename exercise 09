@@ -1,0 +1,47 @@
+int main(void)
+{
+    const double pi=3.141592;
+    double R=3;
+    double S,L=2*pi*R;
+    S=pi*R*R;
+    printf("Duljinata na okr s radius %.2f: %f\n", R,L);
+    printf("Plost na krug s radius %.2f: %f\n",R,S);
+    return 0;
+}
+
+
+int main(void)
+{
+    char first='A', last='Z';
+    char x;
+    int count;
+    count=last-first+1;
+    x=first+10;
+    printf("Purvi simvol: %c\n", first);
+    printf("Kod na purviq simvol: %d\n", first);
+    printf("Posleden simbol: %c\n", last);
+    printf("Kod na posledniq simbol: %d\n", last);
+    printf("Br. bukvi: %d\n", count);
+    printf("Simbol \'%c\' s kod %d\n",x,x);
+    return 0;
+}
+
+
+int main(void)
+{
+    int num;
+    char symb;
+    int *p;
+    char *q;
+    p=&num;
+    q=&symb;
+    *p=100;
+    *q='A';
+    printf("Stoinost na promenliva num: %d\n",num);
+    printf("Stoinost na promenliva symb: %c\n",symb);
+    num=200;
+    symb='B';
+    printf("Stoinost na adres p: %d\n",*p);
+    printf("Stoinost na adres q: %c\n",*q);
+    return 0;
+}
