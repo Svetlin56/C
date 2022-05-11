@@ -1,0 +1,25 @@
+struct human
+{
+    char name[30];
+    int age;
+};
+
+void show(struct human s1);
+
+int main()
+{
+    struct human s;
+    printf("Enter name: ");
+    scanf("%[^\n]%*c", s.name);
+    printf("Enter age: ");
+    scanf("%d", &s.age);
+    show(s);
+    return 0;
+}
+
+void show(struct human s1)
+{
+    printf("Showing structure data...");
+    printf("\n Name of a human : %s", s1.name);
+    printf("\n Age of a human : %d\n", s1.age);
+}
