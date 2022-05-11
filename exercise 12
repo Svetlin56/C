@@ -1,0 +1,56 @@
+enum Day{Sun=1, Mon=2, Tue=3, Wed=4, Thu=5, Fri=6, Sat=7};
+int main()
+{
+    enum Day today=Sun;
+    if(today==Sun || today==Sat)
+    {
+        printf("It's the weekend!");
+    }
+    else
+    {
+        printf("I have to work today!");
+    }
+    return 0;
+}
+
+
+int main()
+{
+    int day;
+    printf("Enter number\n");
+    scanf("%d", &day);
+    
+    switch(day)
+    {
+    case 1:
+      printf("Monday");
+      break;
+
+    case 2:
+      printf("Tuesday");
+      break;
+
+    case 3:
+      printf("Wednesday");
+      break;
+
+    case 4:
+      printf("Thursday");
+      break;
+
+    case 5:
+      printf("Friday");
+      break;
+
+    case 6:
+      printf("Saturday");
+      break;
+
+    case 7:
+      printf("Sunday");
+      break;
+
+      printf("%c", day);
+    }
+    return 0;
+}
