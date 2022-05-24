@@ -1,0 +1,26 @@
+int main (void)
+{
+    const int n=12;
+    int nums[n];
+    int k;
+    for(k=0;k<n;k++)
+    {
+        nums[k]=2*k+1;
+        printf("%d ", nums[k]);
+    }
+    printf("\n");
+    return 0;
+}
+
+
+
+int main (void)
+{
+    char txt[100]="Enter text: ";
+    char str[120];
+    printf("%s", txt);
+    scanf("%[^\n]", str);
+    strcpy(txt, "You entered the text: ");
+    printf("%s%s\n", txt, str);
+    return 0;
+}
