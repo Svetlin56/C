@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void hello (void)
+{
+    printf("Start program \n");
+}
+void show (int n)
+{
+    int k;
+    for(k=1; k<=n; k++)
+    {
+        printf("%d ", k);
+    }
+    printf("\n");
+}
+double getNumber(unsigned int a, unsigned int b)
+{
+    double x, y;
+    x=a;
+    y=b;
+    while(y>=1)
+    {
+        y/=10;
+    }
+    return x+y;
+}
+
+int main (void)
+{
+    hello();
+    show(10);
+    unsigned int m=12, n=345;
+    double res;
+    res=getNumber(m, n);
+
+    printf("Output int: %u %u \n", m, n);
+    printf("Number: %f \n", res);
+    return 0;
+}
+
+
+
+
+#define message() printf("Numbers:\n")
+
+#define numbers(n) int k;\
+for(k=1;k<=(n);k++)\
+{\
+    printf("%d ", k);\
+}\
+printf("\n")
+int main(void)
+{
+    message();
+    numbers(12);
+    return 0;
+}
