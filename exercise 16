@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (void)
+{
+    const int n=12;
+    int pwr[n];
+    pwr[0]=1;
+    printf("| %d |", pwr[0]);
+    int k=1;
+    while(k<n)
+    {
+        pwr[k]=pwr[k-1]*2;
+        printf("%d |", pwr[k]);
+        k++;
+    }
+    printf("\n");
+    return 0;
+}
