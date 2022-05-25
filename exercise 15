@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main (void)
+{
+    double m=9.1E-31;
+    double c=2.998E8;
+    double energy, b;
+    int n=10, k;
+    printf("Speed v/c\t Energy (J) \n");
+    for(k=0;k<n;k++)
+    {
+        b=(double) k/n;
+        energy=m*c*c*(1/sqrt(1-b*b)-1);
+        printf("\t%.1f\t%e\n", b, energy);
+    }
+    return 0;
+}
