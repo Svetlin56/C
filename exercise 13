@@ -39,20 +39,3 @@ int main (void)
     return 0;
 }
 
-
-
-
-#define message() printf("Numbers:\n")
-
-#define numbers(n) int k;\
-for(k=1;k<=(n);k++)\
-{\
-    printf("%d ", k);\
-}\
-printf("\n")
-int main(void)
-{
-    message();
-    numbers(12);
-    return 0;
-}
